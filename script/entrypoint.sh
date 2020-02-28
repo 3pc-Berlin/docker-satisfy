@@ -34,6 +34,10 @@ parameters:
   admin.auth: ${ADMIN_AUTH}
   admin.users: ${ADMIN_USERS}
   composer.home: "%kernel.project_dir%/.composer"
+  github.secret: ~
+  gitlab.secret: ~
+  gitlab.auto_add_repo: false
+  gitlab.auto_add_repo_type: ~
 EOF
   chown ${APP_USER}:${APP_USER} ${PARAM_FILE}
 fi
